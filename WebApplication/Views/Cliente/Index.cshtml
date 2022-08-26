@@ -4,29 +4,29 @@
     ViewData["Title"] = "Lista de Clientes";
 }
 <div class="text-center">
-    <h1>Lista de Clientes</h1>
+    <h1>Client list</h1>
 </div>
 <hr />
 <div class="text-center">
-    <a class="btn btn-outline-success" asp-action="Create" asp-controller="Cliente">Adicionar um novo Cliente</a>
+    <a class="btn btn-outline-success" asp-action="Create" asp-controller="Cliente">Add a new Customer</a>
 </div>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.NomeCompleto)
+                Full Name
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DataNascimento)
+                Date of birth
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Cidade)
+                City
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Sexo)
+                Sex
             </th>
             <th>
-                Usuário
+                User
             </th>
             <th></th>
         </tr>
@@ -51,9 +51,9 @@
                     @Html.DisplayFor(modelItem => item.User)
                 </td>
                 <td>
-                    <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.ClienteId">Editar</a>
-                    <a class="btn btn-success" asp-action="Details" asp-route-id="@item.ClienteId">Detalhes</a>
-                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.ClienteId">Remover</a>
+                    <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.ClienteId">Edit</a>
+                    <a class="btn btn-success" asp-action="Details" asp-route-id="@item.ClienteId">View Details</a>
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.ClienteId">Remove</a>
                 </td>
             </tr>
         }

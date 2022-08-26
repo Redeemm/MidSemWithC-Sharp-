@@ -1,10 +1,10 @@
 ﻿@model WebApplication.Models.Produto
 
 @{
-    ViewData["Title"] = "Editar Produto";
+    ViewData["Title"] = "Edit Product";
 }
 <div class="text-center">
-    <h4>Editar</h4>
+    <h4>Edit</h4>
 </div>
 <hr />
 <div class="mx-auto w-50">
@@ -13,22 +13,22 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="ProdutoId" />
             <div>
-                <label asp-for="NomeProduto" class="control-label">Nome do Produto</label>
+                <label asp-for="NomeProduto" class="control-label">Name of Product</label>
                 <input asp-for="NomeProduto" class="form-control" />
                 <span asp-validation-for="NomeProduto" class="text-danger"></span>
             </div>
             <div hidden>
-                <label asp-for="DataEntrada" class="control-label">Data de Entrada</label>
+                <label asp-for="DataEntrada" class="control-label">Entry Date</label>
                 <input asp-for="DataEntrada" class="form-control" />
                 <span asp-validation-for="DataEntrada" class="text-danger"></span>
             </div>
             <div>
-                <label asp-for="DataSaida" class="control-label">Data de Saída</label>
+                <label asp-for="DataSaida" class="control-label">Departure Date</label>
                 <input asp-for="DataSaida" class="form-control" />
                 <span asp-validation-for="DataSaida" class="text-danger"></span>
             </div>
             <div>
-                <label asp-for="Preco" class="control-label">Preço</label>
+                <label asp-for="Preco" class="control-label">Price</label>
                 <input asp-for="Preco" class="form-control" />
                 <span asp-validation-for="Preco" class="text-danger"></span>
             </div>
@@ -40,7 +40,7 @@
 </div>
 
 <div class="text-center">
-    <a asp-action="Index">Voltar para a lista</a>
+    <a asp-action="Index">Back to list</a>
 </div>
 
 @section Scripts {

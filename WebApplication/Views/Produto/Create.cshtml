@@ -1,10 +1,10 @@
 ﻿@model WebApplication.Models.Produto
 
 @{
-    ViewData["Title"] = "Adicionar Produto";
+    ViewData["Title"] = "Add Product";
 }
 <div class="text-center">
-    <h4>Adicionar Produtos</h4>
+    <h4>Add Products</h4>
 </div>
 <hr />
 <div class="mx-auto w-50">
@@ -12,22 +12,22 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div>
-                <label asp-for="NomeProduto" class="control-label">Nome do Produto</label>
+                <label asp-for="NomeProduto" class="control-label">Product's name</label>
                 <input asp-for="NomeProduto" class="form-control" />
                 <span asp-validation-for="NomeProduto" class="text-danger"></span>
             </div>
             <div>
-                <label asp-for="DataEntrada" class="control-label">Data de Entrada</label>
+                <label asp-for="DataEntrada" class="control-label">Entry date</label>
                 <input asp-for="DataEntrada" class="form-control" />
                 <span asp-validation-for="DataEntrada" class="text-danger"></span>
             </div>
             <div>
-                <label asp-for="DataSaida" class="control-label">Data de Saída</label>
+                <label asp-for="DataSaida" class="control-label">Departure Date</label>
                 <input asp-for="DataSaida" class="form-control" />
                 <span asp-validation-for="DataSaida" class="text-danger"></span>
             </div>
             <div>
-                <label asp-for="Preco" class="control-label">Preço</label>
+                <label asp-for="Preco" class="control-label">Price</label>
                 <input asp-for="Preco" class="form-control" />
                 <span asp-validation-for="Preco" class="text-danger"></span>
             </div>
@@ -39,7 +39,7 @@
 </div>
 
 <div class="text-center">
-    <a asp-action="Index">Voltar para a lista</a>
+    <a asp-action="Index">Back to list</a>
 </div>
 
 @section Scripts {

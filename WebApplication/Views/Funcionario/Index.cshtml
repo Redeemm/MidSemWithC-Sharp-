@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<WebApplication.Models.Funcionario>
 
 @{
-    ViewData["Title"] = "Lista de Funcionários";
+    ViewData["Title"] = "List of Employee";
 }
 <div class="text-center">
-    <h4>Lista de Funcionários</h4>
+    <h4>List of Employee</h4>
 </div>
 <div class="text-center">
     <a class="btn btn-outline-success text-center" asp-action="Create">
@@ -15,16 +15,16 @@
     <thead>
         <tr>
             <th>
-                Nome Completo
+                Full Name
             </th>
             <th>
-                Cargo
+                Roles
             </th>
             <th>
-                Salário
+                Salary
             </th>
             <th>
-                Data de Admissão
+                Admission date
             </th>
             <th></th>
         </tr>
@@ -46,8 +46,8 @@
                     @Html.DisplayFor(modelItem => item.DataAdmissao)
                 </td>
                 <td>
-                    <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.FuncionarioId">Editar</a>
-                    <a class="btn btn-success" asp-action="Details" asp-route-id="@item.FuncionarioId">Detalhes</a>
+                    <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.FuncionarioId">Edit</a>
+                    <a class="btn btn-success" asp-action="Details" asp-route-id="@item.FuncionarioId">Detials</a>
                     <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.FuncionarioId">Remover</a>
                 </td>
             </tr>

@@ -1,13 +1,13 @@
 ﻿@model WebApplication.Models.Cliente
 
 @{
-    ViewData["Title"] = "Remover";
+    ViewData["Title"] = "Remove";
 }
 <div class="text-center">
     <h4>Remover</h4>
 </div>
 <hr />
-<h3>Você tem certeza que deseja remover?</h3>
+<h3>Are you sure you want to remove it?</h3>
 <div>
     <hr />
     <dl class="row">
@@ -46,6 +46,6 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="ClienteId" />
         <input type="submit" value="Remover" class="btn btn-outline-danger" /> 
-        <a asp-action="Index">Voltar para a lista</a>
+        <a asp-action="Index">back to list</a>
     </form>
 </div>

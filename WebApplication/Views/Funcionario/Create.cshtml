@@ -1,10 +1,10 @@
 ﻿@model WebApplication.Models.Funcionario
 
 @{
-    ViewData["Title"] = "Admissão";
+    ViewData["Title"] = "Admission";
 }
 <div class="text-center">
-    <h4>Admissão</h4>
+    <h4>Admission</h4>
 </div>
 <hr />
 <div class="mx-auto w-50">
@@ -12,12 +12,12 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div>
-                <label asp-for="NomeFuncionario" class="control-label">Nome Completo</label>
+                <label asp-for="NomeFuncionario" class="control-label">Full Name</label>
                 <input asp-for="NomeFuncionario" class="form-control" />
                 <span asp-validation-for="NomeFuncionario" class="text-danger"></span>
             </div>
             <div>
-                <label asp-for="CargoFuncionario" class="control-label">Cargo</label>
+                <label asp-for="CargoFuncionario" class="control-label">Role</label>
                 <select asp-for="CargoFuncionario" class="form-control">
                     <option selected disabled>Escolha um cargo...</option>
                     <option>Gerente</option>
@@ -27,12 +27,12 @@
                 <span asp-validation-for="CargoFuncionario" class="text-danger"></span>
             </div>
             <div>
-                <label asp-for="SalarioFuncionario" class="control-label">Salário</label>
+                <label asp-for="SalarioFuncionario" class="control-label">Salary</label>
                 <input asp-for="SalarioFuncionario" class="form-control" />
                 <span asp-validation-for="SalarioFuncionario" class="text-danger"></span>
             </div>
             <div>
-                <label asp-for="DataAdmissao" class="control-label">Data Admissão</label>
+                <label asp-for="DataAdmissao" class="control-label">Date of Admission</label>
                 <input asp-for="DataAdmissao" class="form-control" />
                 <span asp-validation-for="DataAdmissao" class="text-danger"></span>
             </div>
@@ -45,7 +45,7 @@
 </div>
 
 <div class="text-center">
-    <a asp-action="Index">Voltar para a lista</a>
+    <a asp-action="Index">Back to list</a>
 </div>
 
 @section Scripts {
